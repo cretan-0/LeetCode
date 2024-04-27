@@ -8,5 +8,4 @@ class Solution(object):
             z = bin(num).count("1")
             if z in primeNumList:
                 counter+=1
-            z = 0
         return counter
