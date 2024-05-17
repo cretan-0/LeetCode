@@ -8,7 +8,6 @@ class Solution(object):
                     counter += 1
         return counter
 
-
 def main() -> None:
     sol = Solution()
     rectangles = [[1,7],[2,8],[8,8],[2,5],[2,8],[7,4]]
