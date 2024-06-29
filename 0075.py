@@ -1,15 +1,11 @@
-# buble sort
 class Solution(object):
     def sortColors(self, nums):
         made_a_swap = True
-        n = len(nums)
         while made_a_swap:
             made_a_swap = False
-            for i in range(n-1):
+            for i in range(len(nums)-1):
                 if nums[i] > nums[i+1]:
-                    temp = nums[i]
-                    nums[i] = nums[i+1]
-                    nums[i+1] = temp
+                    nums[i], nums[i+1] = nums[i+1], nums[i]
                     made_a_swap = True
         return nums
 
@@ -20,5 +16,7 @@ def main() -> None:
 
 if __name__ == "__main__":
     main()
+
+# Time complexity: O(N^2)
 
 
