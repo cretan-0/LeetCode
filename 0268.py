@@ -1,9 +1,4 @@
-# 87 ms, Beats 90.98%
-
-
-
-
-
+https://leetcode.com/problems/missing-number/solutions/5580856/simple-solution-in-python-beats-90-98/
 
 class Solution(object):
     def missingNumber(self, nums):
