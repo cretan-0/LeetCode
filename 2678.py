@@ -1,3 +1,11 @@
+'''
+# another apporach
+
+class Solution(object):
+    def countSeniors(self, details):
+        return sum (int(x[11:13]) > 60 for x in details)
+'''
+
 # Runtime: 32ms, 8.98%
 # Memory: 11.70MB, 49.54%
 
@@ -18,3 +26,4 @@ def main() -> None:
 
 if __name__ == "__main__":
     main()
+
