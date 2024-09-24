@@ -34,3 +34,25 @@ def main() ->  None:
 
 if __name__ == "__main__":
     main()
+
+# cleaner version
+
+from typing import List
+
+class Solution:
+    def plusOne(self, digits: List[int]) -> List[int]:
+        int_digits = int(''.join(map(str, digits))) # convert list to an int
+        int_digits += 1
+        result = [int(digit) for digit in str(int_digits)] # convert int to list of int
+        return result
+
+
+
+def main() ->  None:
+    sol = Solution()
+    digits = [1,2,3]
+    print(sol.plusOne(digits))
+
+
+if __name__ == "__main__":
+    main()
