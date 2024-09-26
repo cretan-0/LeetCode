@@ -13,14 +13,12 @@ class Solution:
 
                 counter: int = 0
                 for i in range(min(len(cp_arr1), len(cp_arr2))):
-
-                    if cp_arr1[i] == cp_arr2[i]:
-                        counter += 1
                     if cp_arr1[0] != cp_arr2[0]:
-                        counter = 0
-
-
-
+                        break
+                    elif cp_arr1[i] != cp_arr2[i]:
+                        break
+                    elif cp_arr1[i] == cp_arr2[i]:
+                        counter += 1
 
                     if counter > max:
                         max = counter
@@ -28,9 +26,6 @@ class Solution:
 
         return max
 
-
-# Wrong Answer
-# 479 / 718 testcases passed
 def main() -> None:
     sol = Solution()
     arr1 = [1124,9304,8119]
