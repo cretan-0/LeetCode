@@ -6,8 +6,9 @@ class Solution(object):
                 return True
         return False
 
-# V2
 
+'''
+#v2
 class Solution(object):
     def containsDuplicate(self, nums):
         hashtable = {}
@@ -20,6 +21,16 @@ class Solution(object):
             return True
         else:
             return False
+'''
+'''
+#v3 
+class Solution(object):
+    def containsDuplicate(self, nums):
+        copy_nums = set(nums)
+        if len(copy_nums) < len(nums):
+            return True
+        return False
+'''
 
 def main() -> None:
     sol = Solution()
