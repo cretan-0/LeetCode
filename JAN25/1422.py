@@ -5,7 +5,7 @@ class Solution(object):
             left = s[:i+1]
             right = s[i+1:]
             counter_max = max(counter_max, left.count('0') + right.count('1')) 
-        return counter_max
+        return counter_max 
 
 
 def main() -> None:
