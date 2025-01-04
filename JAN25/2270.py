@@ -6,7 +6,7 @@ class Solution(object):
 
         for i in range(len(nums)-1):
             left_sum += nums[i]
-            right_sum = total_sum - left_sum
+            right_sum = total_sum - left_sum 
             if left_sum >= right_sum:
                 counter +=1
         return counter
