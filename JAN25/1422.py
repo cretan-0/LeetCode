@@ -4,7 +4,7 @@ class Solution(object):
         for i in range(len(s)-1):
             left = s[:i+1]
             right = s[i+1:]
-            counter_max = max(counter_max, left.count('0') + right.count('1'))
+            counter_max = max(counter_max, left.count('0') + right.count('1')) 
         return counter_max
 
 
