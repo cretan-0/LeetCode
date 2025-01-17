@@ -1,19 +1,9 @@
 class Solution(object):
     def xorAllNums(self, nums1, nums2):
-        nums3 = []
+        res = 0
         for i in range(len(nums1)):
             for j in range(len(nums2)):
-                a = nums1[i] ^ nums2[j]
-                nums3.append(a)
-        print(nums3)
-        # pairs are good
-        
-        
-        res = 0
-        for i in range(len(nums3)-1):
-            a = nums3[i] ^ nums3[i+1]
-            res += a
-        
+                res ^= nums1[i] ^ nums2[j]
         return res
 
 
