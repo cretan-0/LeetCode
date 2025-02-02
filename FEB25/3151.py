@@ -25,6 +25,13 @@ class Solution(object):
 
 #v3
 
+'''
+Bit Manipulation - Last segnificant bit
+if last significant bit is 1 -> odd
+if last significant bit is 0 -> even 
+
+'''
+
 class Solution(object):
     def isArraySpecial(self, nums):
         return all((nums[i] & 1 != nums[i+1] & 1) for i in range(len(nums)-1))
