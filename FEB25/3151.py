@@ -22,3 +22,9 @@ class Solution(object):
             if (nums[i]+nums[i+1]) % 2 == 0:
                 return False
         return True
+
+#v3
+
+class Solution(object):
+    def isArraySpecial(self, nums):
+        return all((nums[i] & 1 != nums[i+1] & 1) for i in range(len(nums)-1))
