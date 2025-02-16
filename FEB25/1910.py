@@ -1,7 +1,7 @@
 class Solution(object):
     def removeOccurrences(self, s, part):
         while part in s:
-            s = s.replace(part, "", 1)
+            s = s.replace(part, "", 1) # delete only first occurance
         return s
 
 
