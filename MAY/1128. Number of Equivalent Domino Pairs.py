@@ -1,7 +1,10 @@
 import types
+from collections import Counter
 class Solution:
-    def numEquivDominoPairs(self, dominoes: List[List[int]]) -> int: # aici valoarea returnata trebuie sa fie un int
-        pass
+    def numEquivDominoPairs(self, dominoes) -> int: # aici valoarea returnata trebuie sa fie un int
+        dominoes = sorted([tuple(sorted(domino)) for domino in dominoes])
+        a = Counter(dominoes)
+        return max(a.values()-1)
 
 
 def main() -> None: # functia nu returneaza nimic, acest "None" este pus explicit
